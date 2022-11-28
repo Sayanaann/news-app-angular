@@ -4,18 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddnewsComponent } from './addnews/addnews.component';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ViewnewsComponent } from './viewnews/viewnews.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute:Routes=[
   {
     path :"",
-    component :LibraryappComponent
+    component :AddnewsComponent
   },
   {
-    path :"userreg",
-    component :UserregComponent
+    path :"viewnews",
+    component :ViewnewsComponent
   }
 ]
 
@@ -23,7 +24,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AddnewsComponent,
-    ViewnewsComponent
+    ViewnewsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
