@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AddnewsComponent } from './addnews/addnews.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { ViewnewsComponent } from './viewnews/viewnews.component';
 
 const myRoute:Routes=[
   {
@@ -21,7 +22,8 @@ const myRoute:Routes=[
 @NgModule({
   declarations: [
     AppComponent,
-    AddnewsComponent
+    AddnewsComponent,
+    ViewnewsComponent
   ],
   imports: [
     BrowserModule,
